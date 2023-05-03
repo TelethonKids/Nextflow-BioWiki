@@ -6,10 +6,6 @@
 
   
 
-#### General outline:[](https://app.clickup.com/37300873/v/dc/13jam9-2128/13jam9-2148?block=block-949dd629-9be6-4e0a-94f8-0edc5d2aeb40)
-
-  
-
 #### **Links/Resources used:**
 
 1. nf-core tools docs [https://nf-co.re/tools/](https://nf-co.re/tools/)
