@@ -6,10 +6,6 @@
 
   
 
-#### General outline:[](https://app.clickup.com/37300873/v/dc/13jam9-2128/13jam9-2148?block=block-f78a2869-7593-42ad-909c-94c3645c1233)
-
-  
-
 #### **Links/Resources used:**
 
 1. nf-core/rnaseq pipeline
