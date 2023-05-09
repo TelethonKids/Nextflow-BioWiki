@@ -14,7 +14,7 @@ This Biowiki page is intended to be a one-stop solution for getting started with
 <!-- [logo]: https://giving.telethonkids.org.au/globalassets/media/images/type-of-image/logos/tel.svg "Telethon Kids Institute" -->
 
 ## Table of Contents
----
+
 * [Questions](https://github.com/tki-perth/Nextflow-BioWiki/tree/main/Questions)
 
 <!-- 1. Question index -->
@@ -33,7 +33,7 @@ This Biowiki page is intended to be a one-stop solution for getting started with
      
 
 ## Contributors
----
+
 - Patricia Agudelo-Romero
 - Abhinav Sharma
 - Talya Conradie
@@ -42,7 +42,7 @@ This Biowiki page is intended to be a one-stop solution for getting started with
 
 
 ## Contact us
----
+
 For any questions or requests to host projects, please contact us at:
 - Patricia.AgudeloRomero@telethonkids.org.au
 - abhinav@biosharp.net
