@@ -1,10 +1,10 @@
 ### SEMINAR 3: Introduction to nf-core/differential abundance pipeline
 
+Video link: https://vimeo.com/824613336?share=copy 
   
 
 #### **Presenter: Patricia, Talya, Abhinav**
 
-  
 
 #### **Links/Resources used:**
 
