@@ -46,7 +46,7 @@ This Biowiki page is intended to be a one-stop solution for getting started with
 For any questions or requests to host projects, please contact us at:
 - Patricia.AgudeloRomero@telethonkids.org.au
 - abhinav@biosharp.net
-- Talya.Conradie@telehtonkids.org.au
+- Talya.Conradie@telethonkids.org.au
 - chris.hakkart@seqera.io
 
 
