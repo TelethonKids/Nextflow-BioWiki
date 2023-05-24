@@ -1,5 +1,7 @@
 ## Basecamp
 
+![Overview](_images/vm_setup.png)
+
 ### `PATH` and user-local `bin` folder
 
 ```console
