@@ -69,3 +69,20 @@ sdk install java 17.0.6-amzn
 ```
 References:
     - https://www.java.com/en/download/help/whatis_java.html
+
+### `nextflow`
+
+A workflow engine and language that enables scalable and reproducible scientific pipelines 
+
+Allows for parallelisation and distribution computing – nextflow based on dataflow programming model, simplifies parallelisation
+
+```
+cd $HOME/bin
+
+wget -qO- https://get.nextflow.io | bash
+
+```
+References:
+    - https://github.com/nextflow-io/nextflow
+    - [Story of Nextflow](https://elifesciences.org/labs/d193babe/the-story-of-nextflow-building-a-modern-pipeline-orchestrator)
+
