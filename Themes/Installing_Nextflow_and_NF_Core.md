@@ -9,7 +9,7 @@ mkdir $HOME/bin
 export $PATH="$PATH:$HOME/bin"
 
 ```
-### Text editor:
+### `micro` Text editor:
 
 A program used to edit plain text files, create and edit files based in various programming languages, handle “hand-coding” of many different languages.
 
@@ -28,20 +28,17 @@ curl https://getmic.ro | bash
 - Similar to the text editor nano
 - Install using prebuilt binary, quick-install script, eget, package managers (brew - Mac, snap – Linux, as well as many other package managers
 
-Installed in the bin directory (directory where user of operating system can
-find their applications, contains shells like bash and commonly used comands - https://unix.stackexchange.com/questions/237152/purpose-of-bin-directory#:~:text=Bin%20is%20an%20abbreviation%20of,aren't%20used%20to%20them.
+To make the addition of `$HOME/bin` change permanent, let's update the `~/.bashrc` 
 
-
-
-References:
-    - https://learntocodewith.me/resources/text-editors/
-
-
-NOTE: To make this change permanent, let's add this to the `~/.bashrc` 
+```console 
+micro ~/.bashrc
+```
 
 ```
 export $PATH="$PATH:$HOME/bin"
 ```
 
 
+References:
+    - (Purpose of bin directory)[https://unix.stackexchange.com/questions/237152/purpose-of-bin-directory#:~:text=Bin%20is%20an%20abbreviation%20of,aren't%20used%20to%20them]
 
