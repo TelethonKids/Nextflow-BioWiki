@@ -94,7 +94,7 @@ An open source _package management system_, and environment management system, a
 
 Conda is an environment manager, switch between multiple environments with different dependencies, languages and softwares
 
-Conda environments similar to virtual environments (pythons virtualenv), more powerful since mamba able to manage native dependencies and downloaded ones, able to generalise the virtual environment to many programmed languages (https://mamba.readthedocs.io/en/latest/user_guide/concepts.html#concepts)
+Conda environments similar to virtual environments (pythons virtualenv), more powerful since mamba able to manage native dependencies and downloaded ones, able to generalise the virtual environment to many programmed languages
 
 
 ```console
