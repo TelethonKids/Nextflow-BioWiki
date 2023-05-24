@@ -46,12 +46,26 @@ References:
 
 ### `sdkman`
 
-"Software Development Kit Manager" https://sdkman.io/ 
-Tool for managing parallel version of multiple Software Development Kits
-Java new release cycle, developers need to manage parallel versions and different builds of SDKs in their environment, SDKman helps with managing installation and selection of the SDKs (as opposed to constantly setting path variables) https://www.baeldung.com/java-sdkman-intro
-sdkman: tool to manage parallel versions of multiple SDKs, convenient in command line for listing, installing, switching, and removing SDKs, also sets environmental variables, also supports downloading of other Java-like/based languages (https://www.baeldung.com/java-sdkman-intro)
-Java, programming language, runtime – apps written in Java interpreted by Java Virtual Machine (JVM), allows it to run on all other platforms despite writing on another
-Programming language and application may develop at different rates – Java advances version while application running with may not be; for two applications need to use that require different Java versions may need to install both on same system – SDKman allows for management of your different Java versions and related languages
-ESSENTIALLY – package manager for Java https://opensource.com/article/22/3/manage-java-versions-sdkman
-## add installation code, and any other help usage code at the end (https://github.com/sdkman/sdkman-cli)
+https://sdkman.io/
 
+"Software Development Kit Manager"  - a tool for managing parallel version of multiple Software Development Kits. 
+
+We will use this essentially as a package manager for Java 
+
+```console
+curl -s "https://get.sdkman.io" | bash 
+exec $SHELL
+```
+
+References
+    - https://opensource.com/article/22/3/manage-java-versions-sdkman
+
+### `java`
+
+Programming language and computing platform, platform on which many services and applications are built 
+
+```console 
+sdk install java 17.0.6-amzn
+```
+References:
+    - https://www.java.com/en/download/help/whatis_java.html
