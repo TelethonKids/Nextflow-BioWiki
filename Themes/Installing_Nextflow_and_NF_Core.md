@@ -9,7 +9,7 @@ mkdir $HOME/bin
 export $PATH="$PATH:$HOME/bin"
 
 ```
-### `micro` Text editor:
+### `micro`
 
 A program used to edit plain text files, create and edit files based in various programming languages, handle “hand-coding” of many different languages.
 
@@ -86,3 +86,32 @@ References:
     - https://github.com/nextflow-io/nextflow
     - [Story of Nextflow](https://elifesciences.org/labs/d193babe/the-story-of-nextflow-building-a-modern-pipeline-orchestrator)
 
+## Checkpoint-2
+
+### `conda` and `micromamba`
+
+An open source _package management system_, and environment management system, able to install, run, and update packages and any dependencies, save and switch between environments, can package and distribute software from any language () 
+
+Conda is an environment manager, switch between multiple environments with different dependencies, languages and softwares
+
+Conda environments similar to virtual environments (pythons virtualenv), more powerful since mamba able to manage native dependencies and downloaded ones, able to generalise the virtual environment to many programmed languages (https://mamba.readthedocs.io/en/latest/user_guide/concepts.html#concepts)
+
+
+```console
+wget https://repo.anaconda.com/miniconda/Miniconda3-py310_23.3.1-0-Linux-x86_64.sh
+
+bash Miniconda3-latest-Linux-x86_64.sh -b -p $HOME/miniconda
+```
+
+`micromamba` is a minimal single-binary command line tool that is used to manage conda environments
+
+```console
+curl micro.mamba.pm/install.sh | bash
+```
+
+Cheatsheets: 
+    - https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf 
+    - https://docs.conda.io/projects/conda/en/latest/_downloads/843d9e0198f2a193a3484886fa28163c/conda-cheatsheet.pdf
+
+References
+    - https://docs.conda.io/en/latest/
