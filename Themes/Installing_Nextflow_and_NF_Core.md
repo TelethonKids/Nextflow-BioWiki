@@ -8,7 +8,17 @@
 
 mkdir $HOME/bin
 
-export $PATH="$PATH:$HOME/bin"
+export PATH="$PATH:$HOME/bin"
+
+```
+
+
+### `zip` and `unzip`
+
+Make sure that your VM has the `zip` and `unzip` tools installed, in some cases this might need assitance from your administrator
+
+```console
+sudo apt install zip unzip
 
 ```
 ### `micro`
@@ -37,7 +47,7 @@ micro ~/.bashrc
 ```
 
 ```
-export $PATH="$PATH:$HOME/bin"
+export PATH="$PATH:$HOME/bin"
 ```
 
 
@@ -102,10 +112,22 @@ Conda environments similar to virtual environments (pythons virtualenv), more po
 ```console
 wget https://repo.anaconda.com/miniconda/Miniconda3-py310_23.3.1-0-Linux-x86_64.sh
 
-bash Miniconda3-latest-Linux-x86_64.sh -b -p $HOME/miniconda
+bash Miniconda3-py310_23.3.1-0-Linux-x86_64.sh -b -p $HOME/miniconda
+
+$HOME/miniconda/bin/conda init
+
+exec $SHELL
 ```
 
-`micromamba` is a minimal single-binary command line tool that is used to manage conda environments
+After the above steps, your shell prompt should now mention the `(base)` environment as shown below
+
+```
+(base) ubuntu@lung-virome:~$
+
+```
+
+`micromamba` is a minimal single-binary command line tool that is used to manage conda environments. 
+The core benefit of `micromamba` is the installation speed of softwares, we shall need it when we run bigger pipelines (e.g. `nf-core/rnaseq`)
 
 ```console
 curl micro.mamba.pm/install.sh | bash
@@ -117,3 +139,102 @@ Cheatsheets:
 
 References
     - https://docs.conda.io/en/latest/
+
+### `rnaseq-nf` for sanity check
+
+The `nextflow-io/rnaseq-nf` is a "toy" Nextflow pipeline which is often used for making sure that the infrastructure is setup correctly.
+
+We'll rely on this pipeline and test our `conda` setup.
+
+```console
+nextflow run nextflow-io/rnaseq-nf -profile conda
+
+```
+## Checkpoint-3
+
+### `tmux` (or `screen`)
+
+Once we have all the building blocks setup, we can start running the pipelines in background using tools like `tmux` or `screen`
+
+Terminal multiplexer, allows for increased productivity and session management
+
+Allows you to switch between several programs/pages/windows/sessions in one
+terminal, detach them (while they keep running in the background), and reattach
+them (in different terminals) (https://github.com/tmux/tmux/wiki)
+
+
+Resources:
+
+- Github: https://github.com/tmux/tmux/wiki
+- Manual page server: https://manpages.ubuntu.com/manpages/xenial/en/man1/tmux.1.html
+- Getting started page: https://github.com/tmux/tmux/wiki/Getting-Started
+
+Cheatsheets: 
+- https://quickref.me/tmux.html
+- https://github.com/tmux/tmux/wiki/Getting-Started
+- https://tmuxcheatsheet.com/ 
+- https://gist.github.com/henrik/1967800
+
+## Checkpoint-4
+
+### `nf-core` tool
+
+The `nf-core` community has created a best-practices tool called `nf-core` which could be used to download and run existing pipelines as well as to create new pipelines from scratch.
+
+```console
+pip install -U nf-core
+```
+
+We shall make use of this tool to download the `nf-core/rnaseq` (the _full_ rnaseq pipeline)
+
+
+```console
+nf-core download rnaseq
+```
+
+After the following command just follow the prompts to 
+- Select which version of the pipeline to download
+- Download all the singularity containers
+
+### Custom config file 
+
+Sometimes, to fully customize the pipeline as per the VM or some pre-installed conda-environments it might be necessary to create a custom `.config` file.
+
+If you have some pre-existing conda environments you could instruct the pipeline to use that environment instead of creating new using the process selectors 
+
+```nextflow
+
+//NOTE: Use pre-existing environment
+process {
+    withName: "SALMON_INDEX" {
+        conda "bioconda::salmon=1.10.1"
+    }
+}
+
+
+```
+
+Or you could limit the number of parallel executions by appending this snippet in the config file
+
+```nextflow
+
+executor {
+    queueSize = 4
+}
+
+```
+
+To use this custom file, append `-c custom.config` to the `nextflow run ...` command, for example
+
+```console
+nextflow run nf-core/rnaseq \
+    -profile test,conda \
+    -c custom.config \
+    --outdir <OUTDIR>
+```
+
+## Summit
+
+Congratulations for making it to the Summit! 
+
+You have done admirably well in setting up your VM for running any Nextflow pipeline.
