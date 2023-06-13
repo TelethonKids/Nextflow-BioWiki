@@ -71,7 +71,7 @@ export PATH="$PATH:$HOME/bin"
 - [Micro editor](https://micro-editor.github.io/)
 
 
-## Checkpoint-1
+## Checkpoint 1
 
 ### `sdkman`
 
@@ -132,7 +132,7 @@ wget -qO- https://get.nextflow.io | bash
 - [Story of Nextflow](https://elifesciences.org/labs/d193babe/the-story-of-nextflow-building-a-modern-pipeline-orchestrator)
 - [Nextflow](https://www.nextflow.io/)
 
-## Checkpoint-2
+## Checkpoint 2
 
 ### `conda` and `micromamba`
 
@@ -194,7 +194,7 @@ nextflow run nextflow-io/rnaseq-nf -profile conda
 References
 - [RNAseq-NF pipeline Github](https://github.com/nextflow-io/rnaseq-nf)
 
-## Checkpoint-3
+## Checkpoint 3
 
 ### `tmux` (or `screen`)
 
@@ -230,7 +230,7 @@ Cheatsheets:
 - [Tmux github](https://github.com/tmux/tmux/wiki)
 
 
-## Checkpoint-4
+## Checkpoint 4
 
 ### `nf-core` tool
 
