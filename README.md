@@ -13,14 +13,16 @@ This Biowiki page is intended to be a one-stop solution for getting started with
     * [Seminar 1: Introduction to Nextflow and nf-core](./Seminars/01_Introduction.md#seminar-1-introduction-to-nextflow-and-nf-core) 
     * [Seminar 2: Introduction to nf-core RNAseq](./Seminars/02_nf-core_and_rnaseq.md)
     * [Seminar 3: Introduction to nf-core and differentialabundance](./Seminars/03_nf-core_and_differentialabundance.md)
+    * [Seminar 4: Introduction to nf-core smrnaeq pipeline and Nextflow Tower]()
 
 * [SeminarCode](./SeminarCode)
+	* [Seminar 4]()
  
 * [HackyHours](./HackyHours)
 
     * [Debugging Pipelines](./HackyHours/Debugging_Pipelines.md)
     * [Learning Nextflow](./HackyHours/Learning_Nextflow.md)
-
+    * [Installing Nextflow and nf-core]()
      
 
 ## Contributors
