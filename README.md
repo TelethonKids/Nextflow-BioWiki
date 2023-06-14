@@ -15,20 +15,26 @@ This Biowiki page is intended to be a one-stop solution for getting started with
 
 ## Table of Contents
 
-* [Questions](https://github.com/tki-perth/Nextflow-BioWiki/tree/main/Questions)
+* [Seminar Code](https://github.com/TelethonKids/Nextflow-BioWiki/tree/main/SeminarCode)
+    * [Seminar 1]()
+    * [Seminar 2]()
+    * [Seminar 3]()
+    * [Seminar 4]()
 
 <!-- 1. Question index -->
 <!-- 2. FAQ sheet -->
-* [Seminars](https://github.com/tki-perth/Nextflow-BioWiki/tree/main/Seminars)
+* [Seminars](https://github.com/TelethonKids/Nextflow-BioWiki/tree/main/Seminars)
 
-    * [Seminar 1: Introduction to Nextflow and nf-core](https://github.com/tki-perth/Nextflow-BioWiki/blob/main/Seminars/01_Introduction.md#seminar-1-introduction-to-nextflow-and-nf-core) 
-    * [Seminar 2: Introduction to nf-core RNAseq](https://github.com/tki-perth/Nextflow-BioWiki/blob/main/Seminars/02_nf-core_and_rnaseq.md)
-    * [Seminar 3: Introduction to nf-core and differentialabundance](https://github.com/tki-perth/Nextflow-BioWiki/blob/main/Seminars/03_nf-core_and_differentialabundance.md)
+    * [Seminar 1: Introduction to Nextflow and nf-core](https://github.com/TelethonKids/Nextflow-BioWiki/blob/main/Seminars/01_Introduction.md) 
+    * [Seminar 2: Introduction to nf-core RNAseq](https://github.com/TelethonKids/Nextflow-BioWiki/blob/main/Seminars/02_nf-core_and_rnaseq.md)
+    * [Seminar 3: Introduction to nf-core and differentialabundance](https://github.com/TelethonKids/Nextflow-BioWiki/blob/main/Seminars/03_nf-core_and_differentialabundance.md)
+    * [Seminar 4: Introduction to nf-core smrnaeq pipeline and Nextflow Tower]()
     <!-- this numbered list is appearing as roman numerals? -->
-* [Themes](https://github.com/tki-perth/Nextflow-BioWiki/tree/main/Themes)
+* [Hacky Hours](https://github.com/TelethonKids/Nextflow-BioWiki/tree/main/Hacky-hours)
 
-    * [Debugging Pipelines](https://github.com/tki-perth/Nextflow-BioWiki/tree/main/Themes/Debugging_Pipelines)
-    * [Learning Nextflow](https://github.com/tki-perth/Nextflow-BioWiki/tree/main/Themes/Learning_Nextflow)
+    * [Debugging Pipelines](https://github.com/TelethonKids/Nextflow-BioWiki/tree/main/Themes/Debugging_Pipelines)
+    * [Learning Nextflow](https://github.com/TelethonKids/Nextflow-BioWiki/tree/main/Themes/Learning_Nextflow)
+    * [Installing Nextflow and nf-core](https://github.com/TelethonKids/Nextflow-BioWiki/blob/main/Hacky-hours/Installing_Nextflow_and_NF_Core.md)
 
      
 
