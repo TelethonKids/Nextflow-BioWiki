@@ -1,4 +1,4 @@
-![Overview](_images/vm_setup.png)
+![Overview](_images/VMsetup.png)
 
 ## Basecamp
 
