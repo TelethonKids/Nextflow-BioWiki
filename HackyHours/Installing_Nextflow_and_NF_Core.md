@@ -1,5 +1,12 @@
 ![Overview](_images/VMsetup.png)
 
+
+
+[![Hacky-hour-1](https://i.vimeocdn.com/video/1680031949-855b0f8e6ee6fcec4625bb116abe1a950b14a64bd9b91c6964fadb618624ef3b-d?mw=960&mh=540)](https://vimeo.com/833560904?share=copy)
+
+
+
+
 ## Basecamp
 
 ### `PATH` and user-local `bin` folder
