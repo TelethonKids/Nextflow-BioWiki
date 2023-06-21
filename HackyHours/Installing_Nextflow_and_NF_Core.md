@@ -1,4 +1,4 @@
-![Overview](_images/VMsetup.png)
+![Overview](_images/vm_setup.png)
 
 
 
