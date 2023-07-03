@@ -3,12 +3,14 @@
 <br>
 
 ### Contents:
-- Using custom containers for different steps of the pipeline
-- Increasing resources for some processes
+
+Pipeline to be optimized  [`nfcore/methylseq`](https://nf-co.re/methylseq)
+
+- Using custom containers for different steps of the pipeline, overriding the default ones
+- Increasing resources for specific processes
 - Changing arguments for different modules
-    - Reducing parallelism for controlled experiments
-    - Max cpu/time/memory of the pipeline and processes
-- Pipeline to be optimized  [`nfcore/methylseq`](https://nf-co.re/methylseq)
+- Reducing parallelism for controlled experiments
+- Max cpu/time/memory of the pipeline and processes
 
 Training Resources:
 
@@ -23,7 +25,10 @@ Training Resources:
 ## Stage 1
 
 ### Custom `Configurations`
-Custom `configuration` files are  a text file with a set of properties that allow for the decoupling of workflow implementations in `nextflow`. These `config` files provided the information regarding the resources needed, the schedulers that are used, and container options available. This allows for portable deployment of `nextflow` pipelines, without having to modify the original application code. Once any pipeline is launched `nextflow` looks for a `.config` file.
+
+Custom `configuration` files are text files with a set of properties that allow for the decoupling of workflow implementations in `nextflow`. These `config` files provide the information regarding the resources needed, the executor that is used, and the container options available. This allows for portable deployment of `nextflow` pipelines, without having to modify the original application code. 
+
+Once any pipeline is launched `nextflow` looks for a `nextflow.config` file (by default).
 
 <br>
 
@@ -46,7 +51,7 @@ Custom `configuration` files are  a text file with a set of properties that allo
 
 <br>
 
-`Nextflow` pipelines are able to run on any computational infrastructure, while also supporting various containers (docker, singularity, conda, etc.). For any `nextflow` pipeline to run, all of these softwares and systems must be available _as well as_ a `.config` file for `nextflow` to know how best to run the pipeline on your system.
+`Nextflow` pipelines are able to run on a number of computational infrastructure, while also supporting various containers (docker, singularity etc.) and package managers (conda, spack etc.). For any `nextflow` pipeline to run, all of these softwares and systems must be available _as well as_ a `.config` file for `nextflow` to know how best to run the pipeline on your system.
 
 When a `nextflow` pipeline is launched, `nextflow` will look for the `configuration` file in multiple locations. If there are multiple `configuration` files, it is possible that there will be conflicting settings. Therefore configs are ranked, with those higher in the list taking priority for the `configuration` settings if multiple are available.
 
@@ -62,29 +67,29 @@ When a `nextflow` pipeline is launched, `nextflow` will look for the `configurat
 > - `Config` file `$HOME/.nextflow/config`
 > - values defined with the pipeline script itself (e.g. `main.nf`)
 
-When more than one option for specifying a config is provided, they're merged, with some settings possibly overridden.
+When more than one option for specifying a config is provided, they're merged, with some settings possibly overridden to obtain the final resolved configuration.
 
 <br>
 
-There are three different types of `custom configuration` files:
+There are three different types of `custom configuration` files when working with nf-core pipelines:
 1. Basic pipeline `config` files
 2. Shared `nf-core/configs` config profiles
-3. `Custom conifguration` files 
+3. `Custom configuration` files 
 
 #### **Basic**
----
+
 This `config` comes with each `nf-core` pipeline and contains "sensible defaults" for resource requirements. This config is always loaded and generally overwritten by other prioritised `configs`.
 
-With the basic `config` if the `-profile` is not specified, the pipeline will run locally and expect all software to be installed on the specified `PATH` (not recommended).
+With the basic `config` if the `-profile` is not specified, the pipeline will run locally and expect all software to be installed on the specified `PATH` i.e. local installations (not recommended).
 
 #### **Shared**
----
+
 When using a shared system with other people (mainly regarding institute servers), it is best to use the `config` profile from [`nf-core/configs`](https://github.com/nf-core/configs) if available.
 
 Best for widespread reproducibility and accepted protocols per institute.
 
 #### **Custom**
----
+
 `Custom configs` are used when only the person to be running the pipeline creates a local `config` file. An individually created and customised `config`. `Nextflow` will look for this `config` file in three places:
 - Users `$HOME` directory: `~/.nextflow/config`
 - Analysis working directory: `nextflow.config`
@@ -106,8 +111,10 @@ Best for widespread reproducibility and accepted protocols per institute.
 - [Introduction to Bioinformatics workflows with `Nextflow` and `nf-core`](https://carpentries-incubator.github.io/workflows-nextflow/08-configuration/index.html)
 - [Configuration](https://www.nextflow.io/docs/edge/config.html)
 - [`nf-core` pipeline configuration](https://nf-co.re/usage/configuration)
-- 
+ 
 <br>
+
+---
 
 ## Stage 2
 
@@ -115,16 +122,16 @@ Best for widespread reproducibility and accepted protocols per institute.
 
 <br>
 
-`nfcore/methylseq` is a Nextflow bioinformatic pipeline used for the analysis of methylation (bisulphite) sequencing data. The `nfcore/methylseq` pipeline is able to preprocess the raw data from raw fastq files, align the reads, and do further quality control analysis on the results.
+`nfcore/methylseq` is a Nextflow pipeline used for the analysis of methylation (bisulphite) sequencing data. The `nfcore/methylseq` pipeline is able to preprocess the raw data from raw fastq files, align the reads, and do further quality control analysis on the results.
 
-`nfcore/methylseq` has multiple different workflows from which users can specify in the `config` file, these being Bismark, or bwa/meth and MethylDackel. The specfication for which workflow to use comes under the `--aligner` tag.
+`nfcore/methylseq` has multiple different workflows from which users can specify in the `config` file, these being Bismark, or bwa/meth and MethylDackel. The `--aligner` parameter  can be used to opt for a specific tool.
 
-`nfcore/methylseq` requires pipeline parameters to be provided by either the command line, or through a Nextflow `-params-file`. Custom `config` files can be used to provide any specific confirgurations _except for parameters_.
+`nfcore/methylseq` requires pipeline parameters to be provided by either the (i) configuration files, (ii) command line, or (iii) through the `-params-file`. A general recommendation is that the `config` files should be used to provide any specific configurations _except for parameters_.
 
 <br>
 
 #### **Usage**
-`nfcore/methylseq` essentially contains two pipelines in one:
+`nfcore/methylseq` essentially contains two workflows in one pipeline:
 > - Default: Bismark with Bowtie2 as the alignment tool. HISAT2 can also be used through specifying in the command line.
 > - Other: BWA-Meth and MethylDackel. For this pipeline the appropriate flag in command line must be used.
 
@@ -216,7 +223,7 @@ includeConfig 'system_resources.config'
 ---
 This specification aviods the failure of a pipeline due to not having enough resources for a process. The pipeline will check for the maximum parameters for memory, cpu, and time, with no single job exceeding these maximums. If a run fails due to a resource cap the pipeline will restart and extend the resources needed.
 
-Caps avoid pipeline processes using too much resources and crashing the pipeline.
+The resource limits avoid pipeline processes using too much resources and crashing the pipeline.
 
 #### **Tuning workflow resources**
 ---
@@ -233,15 +240,25 @@ Can adjust workflows through:
 
 The `custom config` would need to identify the `process`, override the `container`/`conda` by `withNAME`, then pass the `custom.config` in the command line by `-c custom.config`.
 
+The process selectors such as `withName` and `withLabel` can be used for overriding any defaults.
+
 ```console
 process {
-        withName: NAME
-            container/conda = 'Docker/Singularity/Conda'
+
+        // Either a container
+        withName: "PROCESS_NAME"
+            container = 'Docker/Singularity etc'
+        }
+
+
+        // Or a conda environment
+        withLabel: "CUSTOM_LABEL" {
+            conda = "Conda file or env location"
         }
 ```
 #### **Modifying tool arguments**
----
-Most of the pipeline default arguments will be defined in `conf/modules.conf`. To modify which parameters are used by any given tool, can use the `ext.args` command. If this process in the software is not yet supported by the pipeline, you can include this in your `custom config`.
+
+Most of the module-level default arguments will be defined in `conf/modules.conf`. To modify which parameters are used by any given tool, can use the `ext.args` command. If this process in the software is not yet supported by the pipeline, you can include this in your `custom config`.
 
 
 Training resources: 
