@@ -39,9 +39,9 @@ This Biowiki page is intended to be a one-stop solution for getting started with
  
 * [HackyHours](./HackyHours)
 
-    * [Customising configurations](./HackyHours/Customising_Configurations.md)
+    * [Installing Nextflow and nf-core](./HackyHours/01_Installing_Nextflow_and_NF_Core.md)
+    * [Customising configurations](./HackyHours/02_Customising_Configurations.md)
     * [Debugging Pipelines](./HackyHours/Debugging_Pipelines.md)
-    * [Installing Nextflow and nf-core](./HackyHours/Installing_Nextflow_and_NF_Core.md)
     * [Learning Nextflow](./HackyHours/Learning_Nextflow.md) 
 
     <br>
