@@ -1,4 +1,4 @@
-### SEMINAR 5: Introduction to the methylseq pipeline
+### SEMINAR 5: Introduction to the nf-core/methylseq pipeline
 
 <br>
 Video link: 

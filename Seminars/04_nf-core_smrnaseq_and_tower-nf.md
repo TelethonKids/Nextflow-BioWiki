@@ -1,4 +1,4 @@
-### SEMINAR 4: Introduction to smrnaseq pipeline and Tower
+### SEMINAR 4: Introduction to nf-core/smrnaseq pipeline and Tower
 
   Video link: https://vimeo.com/833512745 
 
