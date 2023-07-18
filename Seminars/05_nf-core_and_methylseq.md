@@ -29,3 +29,7 @@ Video link:
 
 2. `nf-core/methylseq` Github: [https://github.com/nf-core/methylseq](https://github.com/nf-core/methylseq)
     - Test configs: [https://github.com/nf-core/methylseq/tree/master/conf](https://github.com/nf-core/methylseq/tree/master/conf)
+
+3. `Visual Studio Code`
+    1. Main page: [https://code.visualstudio.com/](https://code.visualstudio.com/)
+    2. Documentation: [https://code.visualstudio.com/docs](https://code.visualstudio.com/docs)
