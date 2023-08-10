@@ -65,7 +65,7 @@ export TOWER_WORKSPACE_ID=<id>
 
 Can store in `$HOME/.nextflow/config`
 
-```cs
+```groovy
 tower {
   enabled = true
   accessToken = '<token>'
