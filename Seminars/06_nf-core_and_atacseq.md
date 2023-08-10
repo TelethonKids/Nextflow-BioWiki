@@ -1,7 +1,8 @@
 ### SEMINAR 6: Introduction to the nf-core/atacseq pipeline
 
 <br>
-Video link: 
+
+Video link: https://vimeo.com/851551002
 
 <br>
 
@@ -26,3 +27,5 @@ Video link:
 
 2. `nf-core/atacseq` Github: [https://github.com/nf-core/atacseq](https://github.com/nf-core/atacseq)
     - Test config: [https://github.com/nf-core/atacseq/blob/master/conf/test.config](https://github.com/nf-core/atacseq/blob/master/conf/test.config)
+
+3. `Gitpod`: [https://www.gitpod.io/](https://www.gitpod.io/)

@@ -1,9 +1,6 @@
 ### SEMINAR 5: Introduction to the nf-core/methylseq pipeline
 
 <br>
-Video link: 
-
-<br>
 
 #### **Presenter: Abhinav, Patricia**
 

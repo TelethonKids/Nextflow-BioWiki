@@ -5,7 +5,7 @@
 
 ### Run command from Introduction
 
-```console
+```bash
 nextflow run nf-core/smrnaseq \
     -profile <docker/singularity/.../institute> \
     --input samplesheet.csv \
@@ -65,7 +65,7 @@ export TOWER_WORKSPACE_ID=<id>
 
 Can store in `$HOME/.nextflow/config`
 
-```
+```cs
 tower {
   enabled = true
   accessToken = '<token>'
