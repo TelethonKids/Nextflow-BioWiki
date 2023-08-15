@@ -1,6 +1,10 @@
 ### SEMINAR 1: Introduction to Nextflow and nf-core
 
-  
+  <br>
+
+Video link: https://vimeo.com/806642995
+
+<br>
 
 #### **Presenter: Chris Hakkart, Patricia**
 
