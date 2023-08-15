@@ -4,7 +4,7 @@
 
 Video link: https://vimeo.com/851551002
 
-<br>
+[Seminar 6 slides](./_slides/06_Seminar_atacseq.pdf)
 
 #### **Presenter: Abhinav, Patricia**
 
