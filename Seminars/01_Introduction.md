@@ -4,11 +4,11 @@
 
 Video link: https://vimeo.com/806642995
 
-<br>
+[Seminar 1 slides](./_slides/01_Seminar.pdf)
 
 #### **Presenter: Chris Hakkart, Patricia**
 
-  
+<br>
 
 #### **Links/Resources used:**
 
