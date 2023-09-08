@@ -5,12 +5,12 @@
 
 ### Basic run command
 ```bash 
-nextflow run nf-core/atacseq /
-    --input samplesheet.csv /
-    --outdir <OUTDIR>
-    --genome GRCh37 /
-    --read_length <50> /
-    -profile <docker> /
+nextflow run nf-core/atacseq \
+    --input samplesheet.csv \
+    --outdir <OUTDIR> r \
+    --genome GRCh37 \
+    --read_length <50> \
+    -profile <docker> \
     -r <2.1.1>
 ```
 ## --input
