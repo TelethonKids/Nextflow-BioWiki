@@ -66,7 +66,7 @@ rclone md5sum test.txt
 
 ### `copy` command
 
-> :note: **Verbose output**:
+> **NOTE**: Verbose output:
 Add `-vv` at the end of the command to execute rclone in verbose mode
 
 
