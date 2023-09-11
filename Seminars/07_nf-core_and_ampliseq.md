@@ -25,3 +25,5 @@ Video link:
 
 2. `nf-core/ampliseq` Github: [https://github.com/nf-core/ampliseq](https://github.com/nf-core/ampliseq)
     - Test config: [https://github.com/nf-core/ampliseq/blob/master/conf/test.config](https://github.com/nf-core/ampliseq/blob/master/conf/test.config)
+
+3. `rclone` (Website)[https://rclone.org/]
