@@ -195,7 +195,7 @@ The `nextflow-io/rnaseq-nf` is a "toy" `nextflow` pipeline which is often used f
 We'll rely on this pipeline and test our `conda` setup.
 
 ```console
-nextflow run nextflow-io/rnaseq-nf -profile conda
+nextflow run nextflow-io/rnaseq-nf -profile conda -latest
 
 ```
 References
