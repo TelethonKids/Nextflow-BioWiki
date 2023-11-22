@@ -1,6 +1,7 @@
 ### SEMINAR 7: Introduction to the nf-core/ampliseq pipeline
 
 <br>
+
 Video link: https://vimeo.com/862294800
 
 <br>
