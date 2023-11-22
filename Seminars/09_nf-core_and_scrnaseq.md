@@ -1,7 +1,8 @@
 ### SEMINAR 9: Introduction to the nf-core/scrnaseq pipeline
 
 <br>
-Video link: 
+
+Video link: https://vimeo.com/882705574
 
 <br>
 

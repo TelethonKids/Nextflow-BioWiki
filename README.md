@@ -10,7 +10,15 @@ This Biowiki page is intended to be a one-stop solution for getting started with
 
 ## Table of Contents
 
-* [Seminars](./Seminars)
+>* [Bootcamp](./Bootcamp/) :tent:
+>
+>    * [Seminar Schedule](./Bootcamp/Schedule.md)
+>    * [Learning Journey](./Bootcamp/Learning_Journey.md)
+>
+
+<br>
+
+* [Seminars](./Seminars) :movie_camera:
 
     * [Seminar 1: Introduction to Nextflow and nf-core](./Seminars/01_Introduction.md#seminar-1-introduction-to-nextflow-and-nf-core) 
     * [Seminar 2: Introduction to nf-core RNAseq](./Seminars/02_nf-core_and_rnaseq.md)
@@ -24,20 +32,24 @@ This Biowiki page is intended to be a one-stop solution for getting started with
 
 <br>
 
-* [Seminarslides](./Seminars/_slides)
+* [Seminarslides](./Seminars/_slides) :clipboard:
 
     * [Seminar 1](./Seminars/_slides/01_Seminar.pdf)
+    * [Seminar 6](./Seminars/_slides/06_Seminar_atacseq.pdf)
+    * [Seminar 9](./Seminars/_slides/09_Seminar_scrnaseq.pdf)
 
 <br>
 
-* [SeminarCode](./SeminarCode)
+* [SeminarCode](./SeminarCode) :computer:
     * [Seminar 1](./SeminarCode/01_seminar.md)
     * [Seminar 3](./SeminarCode/03_seminar.md)
 	* [Seminar 4](./SeminarCode/04_seminar.md)
+    * [Seminar 6](./SeminarCode/06_seminar.md)
+    * [Seminar 7](./SeminarCode/07_seminar.md)
 
 <br>
  
-* [HackyHours](./HackyHours)
+* [HackyHours](./HackyHours) :books:
 
     * [Installing Nextflow and nf-core](./HackyHours/01_Installing_Nextflow_and_NF_Core.md)
     * [Customising configurations](./HackyHours/02_Customising_Configurations.md)
@@ -45,6 +57,7 @@ This Biowiki page is intended to be a one-stop solution for getting started with
     * [Learning Nextflow](./HackyHours/Learning_Nextflow.md) 
 
     <br>
+    
 
 ## Contributors
 

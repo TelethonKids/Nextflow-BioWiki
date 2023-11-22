@@ -1,7 +1,8 @@
 ### SEMINAR 8: Introduction to the nf-core/mag pipeline and EVEREST
 
 <br>
-Video link: 
+
+Video link: https://vimeo.com/873196097 
 
 <br>
 
