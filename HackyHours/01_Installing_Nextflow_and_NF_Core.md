@@ -59,6 +59,11 @@ Installation through:
 >```console
 >curl https://getmic.ro | bash
 >```
+>Then use the command:
+> ```
+> mv micro ~/bin
+> ```
+> to move the micro program to the `~/bin` (`$HOME/bin`) folder. This will mean that when you type in `micro` into your terminal, it will open the micro text editor.
 >
 
 To make the addition of `$HOME/bin` change permanent, let's update the `~/.bashrc` 
